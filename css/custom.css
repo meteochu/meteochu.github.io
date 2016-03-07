@@ -1,0 +1,36 @@
+body {
+ padding-top: 120px;
+ font-family: -apple-system, "Helvetica Neue", sans-serif;
+ background-color: #1B1E23;
+}
+
+hr {
+  background-color: #484C5B;
+  height: 1px;
+  border: 0;
+}
+
+
+#card {
+  background-color: #2A313B;
+}
+
+#title {
+  font-weight: 200;
+  text-align: center;
+  color: #C5CFDB;
+  margin-bottom: : 2px;
+
+}
+
+#subtitle {
+  font-weight: 200;
+  text-align: center;
+  color: #484C5B;
+  margin: auto;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+}
