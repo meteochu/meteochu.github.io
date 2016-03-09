@@ -10,6 +10,9 @@ hr {
   border: 0;
 }
 
+img {
+  max-width: 100%;
+}
 
 #card {
   background-color: #2A313B;
