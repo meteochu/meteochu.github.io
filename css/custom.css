@@ -1,14 +1,26 @@
 body {
-    padding-top: 100px;
     font-family: 'Source Code Pro';
+    font-weight: lighter;
     background-color: #20242C;
 }
 a, a:hover, a:active {
-  color: #C5CFDB;
-  text-decoration: none;
+    color: #C5CFDB;
+    text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4pt;
+}
+.container {
+  display: table;
 }
 #card {
     background-color: #20242C;
+    display: inline-block;
+    vertical-align: middle;
 }
 .comments {
     color: #3E4853;
@@ -26,32 +38,45 @@ a, a:hover, a:active {
     color: #95B47B;
 }
 .twitter {
-  color: #55ACEE;
+    color: #55ACEE;
 }
 .dribbble {
-  color: #ea4c89;
+    color: #ea4c89;
 }
 .email {
     color: #70BEB7;
 }
-.blue {
+.method {
     color: #7D8FA3;
 }
 .github {
     color: #A57A9E;
 }
 .text {
-  color: #B3B8C4;
+    color: #B3B8C4;
 }
-
-@media (min-width: 768px) {
-  .text {
-    font-size: 14pt;
-  }
-}
-
-@media (max-width: 512px) {
+@media(max-width: 320pt) {
   .text {
     font-size: 10pt;
   }
+}
+@media (min-width: 320pt) {
+    .text {
+        font-size: 12pt;
+    }
+}
+@media (min-width: 512pt) {
+    .text {
+        font-size: 14pt;
+    }
+}
+@media (min-width: 768pt) {
+    .text {
+        font-size: 16pt;
+    }
+}
+@media (min-width: 1280pt) {
+    .text {
+        font-size: 18pt;
+    }
 }
