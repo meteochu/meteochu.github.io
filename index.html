@@ -2,47 +2,73 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Andy Liang">
-  <link rel="shortcut icon" href="images/favicon.png"/>
-  <link rel="mask-icon" href="images/mask-icon.svg"/>
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Andy Liang">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="mask-icon" href="images/mask-icon.svg" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 
-  <title>Andy Liang | Developer</title>
+    <title>Andy Liang | Developer</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/custom.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
-    <div class ="container">
-      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-        <div class="jumbotron vertical-center" id="card">
-          <h1 id="title">Andy Liang</h1>
-          <h3 id="subtitle">@meteochu</h3>
-          <hr />
-            <div class ="images">
-              <a href="http://twitter.com/meteochu">
-                <img onDragStart="return false" src="images/Twitter.svg"/>
-              </a>
-              <a href="http://dribbble.com/meteochu">
-                <img onDragStart="return false" src="images/Dribbble.svg"/>
-              </a>
-              <a href="http://github.com/meteochu">
-                <img onDragStart="return false" src="images/Github.svg"/>
-              </a>
-              <a href="mailto:andy@meteochu.me">
-                <img onDragStart="return false" src="images/Mail.svg"/>
-              </a>
-              <a href="http://blog.meteochu.me/">
-                <img onDragStart="return false" src="images/Blog.svg"/>
-              </a>
+    <div class="container">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+            <div class="jumbotron text" id="card">
+                <span class="red">print</span>(<span class="string">'Hello, world.'</span>)
+                <br />
+                <br />
+                <span class="red">let</span> realName = <span class="string">'Andy Liang'</span>
+                <br />
+                <span class="red">let</span> school = <span class="type">University</span>(of: <span class="red">.waterloo</span>)
+                <br />
+                <span class="red">let</span> location = <span class="red">.canada</span>
+                <br />
+                <span class="comments">// Follow me on Twitter </span>
+                <br />
+                <span class="red">let </span><span class="twitter">twitter</span> = <span class="type">Twitter</span>(screenName: <span class="string">'@meteochu'</span>)
+                <br />
+                <a href="http://twitter.com/meteochu">
+                  <span class="twitter">twitter</span>.<span class="blue">showProfile</span>()<br />
+                </a>
+                <span class="comments">// View my latest Dribbble shots </span>
+                <br />
+                <span class="red">let </span><span class="dribbble">dribbble</span> = <span class="type">Dribbble</span>(userName: <span class="string">'meteochu'</span>)
+                <br />
+                <a href="http://dribbble.com/meteochu">
+                  <span class="dribbble">dribbble</span>.<span class="blue">viewShots</span>()<br />
+                </a>
+                <span class="comments">// Star my latest Github projects</span>
+                <br />
+                <span class="red">let </span><span class="github">github</span> = <span class="type">Github</span>(userName: <span class="string">'meteochu'</span>)
+                <br />
+                <a href="http://github.com/meteochu">
+                  <span class="github">github</span>.<span class="blue">openProfile</span>()<br />
+                </a>
+                <span class="comments">// Feel free to email me! </span>
+                <br />
+                <span class="red">let </span><span class="email">email</span> = <span class="type">Mail</span>(address: <span class="string">'andy@meteochu.me'</span>)
+                <br />
+                <a href="mailto:andy@meteochu.me">
+                  <span class="email">email</span>.<span class="blue">sendMessage</span>()<br />
+                </a>
+                <span class="comments">// Check out my blog </span>
+                <br />
+                <span class="red">let </span><span class="blog">blog</span> = <span class="type">URL</span>(string: <span class="string">'http://blog.meteochu.me/'</span>)
+                <br />
+                <a href="http://blog.meteochu.me/">
+                  <span class="blog">blog</span>.<span class="blue">visit</span>()<br />
+                </a>
+                <br />
+
             </div>
         </div>
-      </div>
     </div>
 
 </body>

@@ -1,39 +1,57 @@
 body {
- padding-top: 120px;
- font-family: -apple-system, "Helvetica Neue", sans-serif;
- background-color: #1B1E23;
+    padding-top: 100px;
+    font-family: 'Source Code Pro';
+    background-color: #20242C;
 }
-
-hr {
-  background-color: #484C5B;
-  height: 1px;
-  border: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-#card {
-  background-color: #2A313B;
-}
-
-#title {
-  font-weight: 200;
-  text-align: center;
+a, a:hover, a:active {
   color: #C5CFDB;
-  margin-bottom: : 2px;
-
+  text-decoration: none;
+}
+#card {
+    background-color: #20242C;
+}
+.comments {
+    color: #3E4853;
+}
+.red {
+    color: #B04C58;
+}
+.blog {
+    color: #C5735E;
+}
+.type {
+    color: #D9BE53;
+}
+.string {
+    color: #95B47B;
+}
+.twitter {
+  color: #55ACEE;
+}
+.dribbble {
+  color: #ea4c89;
+}
+.email {
+    color: #70BEB7;
+}
+.blue {
+    color: #7D8FA3;
+}
+.github {
+    color: #A57A9E;
+}
+.text {
+  color: #B3B8C4;
 }
 
-#subtitle {
-  font-weight: 200;
-  text-align: center;
-  color: #484C5B;
-  margin: auto;
+@media (min-width: 768px) {
+  .text {
+    font-size: 14pt;
+  }
 }
 
-.images {
-  display: flex;
-  justify-content: space-between;
+@media (max-width: 512px) {
+  .text {
+    font-size: 10pt;
+  }
 }
