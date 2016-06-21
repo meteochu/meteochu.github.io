@@ -1,4 +1,5 @@
 body {
+    padding-top: 64px;
     font-family: 'Source Code Pro';
     font-weight: lighter;
     background-color: #20242C;
@@ -14,12 +15,8 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 4pt;
 }
-.container {
-  display: table;
-}
 #card {
     background-color: #20242C;
-    display: inline-block;
     vertical-align: middle;
 }
 .comments {
