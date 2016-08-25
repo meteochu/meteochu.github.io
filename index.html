@@ -53,13 +53,13 @@
                 <br />
                 <span class="red">let </span><span class="email">email</span> = <span class="type">Mail</span>(address: <span class="string">"andy@meteochu.me"</span>)
                 <br />
-                <a href="mailto:andy@meteochu.me"><span class="email">email</span>.<span class="method">sendMessage</span>()</a>
+                <a href="mailto:andy@meteochu.me"><span class="type">Mail</span>.<span class="method">default</span>.<span class="method">sendMessage</span>(to: <span class="email">email</span>)</a>
                 <br />
                 <span class="comments">// Check out my blog </span>
                 <br />
                 <span class="red">let </span><span class="blog">blog</span> = <span class="type">URL</span>(string: <span class="string">"http://blog.andyliang.me/"</span>)
                 <br />
-                <a href="http://blog.andyliang.me/"><span class="blog">blog</span>.<span class="method">visit</span>()</a>
+                <a href="http://blog.andyliang.me/"><span class="type">Browser</span>.<span class="method">current</span>.<span class="method">open</span>(<span class="blog">blog</span>)</a>
                 <br />
             </p>
         </div>
