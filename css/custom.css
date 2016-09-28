@@ -1,7 +1,12 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-    padding-top: 64px;
     font-family: 'Source Code Pro';
-    font-weight: lighter;
+    padding-top: 64px;
+    padding-bottom: 64px;
     background-color: #20242C;
 }
 a, a:hover, a:active {
@@ -52,28 +57,40 @@ a:hover {
 .text {
     color: #B3B8C4;
 }
-@media(max-width: 320pt) {
+.sigma  {
+    color: #2BB99D;
+}
+
+/* Bootstrap equivalent of extra-small */
+@media(max-width: 544pt) {
   .text {
-    font-size: 10pt;
+    font-size: 1.0em;
   }
 }
-@media (min-width: 320pt) {
-    .text {
-        font-size: 12pt;
-    }
+
+/* Bootstrap equivalent of small */
+@media(min-width: 544pt) {
+  .text {
+    font-size: 1.4em;
+  }
 }
-@media (min-width: 512pt) {
-    .text {
-        font-size: 14pt;
-    }
+
+/* Bootstrap equivalent of medium */
+@media(min-width: 768pt) {
+  .text {
+    font-size: 1.45em;
+  }
 }
-@media (min-width: 768pt) {
-    .text {
-        font-size: 16pt;
-    }
+
+/* Bootstrap equivalent of large */
+@media(min-width: 992pt) {
+  .text {
+    font-size: 1.5em;
+  }
 }
-@media (min-width: 1280pt) {
+/* Bootstrap equivalent of etra large */
+@media (min-width: 1200pt) {
     .text {
-        font-size: 18pt;
+        font-size: 1.6em;
     }
 }
