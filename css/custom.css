@@ -5,10 +5,15 @@ html {
 
 body {
     font-family: 'Source Code Pro';
+    font-size: 14pt;
     padding-top: 64px;
     padding-bottom: 64px;
     background-color: #20242C;
 }
+#nofont {
+  font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 a, a:hover, a:active {
     color: #C5CFDB;
     text-decoration: none;
@@ -63,38 +68,4 @@ hr {
 }
 .sigma  {
     color: #2BB99D;
-}
-
-/* Bootstrap equivalent of extra-small */
-@media(max-width: 544pt) {
-  .text {
-    font-size: 1.0em;
-  }
-}
-
-/* Bootstrap equivalent of small */
-@media(min-width: 544pt) {
-  .text {
-    font-size: 1.4em;
-  }
-}
-
-/* Bootstrap equivalent of medium */
-@media(min-width: 768pt) {
-  .text {
-    font-size: 1.45em;
-  }
-}
-
-/* Bootstrap equivalent of large */
-@media(min-width: 992pt) {
-  .text {
-    font-size: 1.5em;
-  }
-}
-/* Bootstrap equivalent of etra large */
-@media (min-width: 1200pt) {
-    .text {
-        font-size: 1.6em;
-    }
 }
