@@ -1,81 +1,199 @@
 html {
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
 }
 
 body {
-    font-family: 'Source Code Pro';
-    font-size: 14pt;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    background-color: rgb(32,36,45);
-}
-#nofont {
-  font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16pt;
+  background-color: #e5eeee;
+  color: #5c6977
 }
 
 a, a:hover, a:active {
-    color: #C5CFDB;
-    text-decoration: none;
+  color: #C5CFDB;
+  text-decoration: none;
 }
+
 li {
   list-style-type: none;
 }
+
 a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 4pt;
+  background-color: rgba(130, 130, 130, 0.1);
+  border-radius: 2pt
 }
-#card {
-    background-color: #20242C;
-    vertical-align: middle;
-}
-.bottom {
+
+.footer {
+  font-size: 12pt;
+  color: #7D8FA3;
   border-top-style: solid;
   border-top-width: 1pt;
-  border-color: rgba(62, 72, 83, 0.5);
-  background-color: rgba(35, 40, 45, 0.8);
+  border-color: rgba(220, 230, 240, 0.5);
+  background-color: rgba(230, 240, 245, 0.5);
   position: fixed;
   padding-top: 6pt;
-  padding-bottom: 12pt;
+  padding-bottom: 6pt;
   bottom: 0;
   width: 100%;
+  -webkit-backdrop-filter: blur(4px)
 }
-.comments {
-    color: #3E4853;
+
+.content {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
+
+.code {
+  font-family: 'Source Code Pro', 'Consolas';
+}
+
+.app-icon {
+  border-radius: 20%;
+  margin-bottom: 10px
+}
+
+.app-description {
+  margin: 4px;
+  font-size: 13pt
+}
+
+.title {
+  font-size: 30pt;
+  font-weight: 800;
+  color: black;
+}
+
+.name {
+  color: #5c6977;
+}
+
+.disclaimer {
+  color: #999;
+  font-size: 8pt;
+}
+
+/* Text Colours */
+
 .red {
-    color: #B04C58;
+  color: #B04C58;
 }
-.blog {
-    color: #C5735E;
-}
-.type {
-    color: #D9BE53;
-}
+
 .string {
-    color: #95B47B;
+  color: #95B47B;
 }
-.twitter {
-    color: #55ACEE;
+
+.highlight {
+  color: #28292e;
+  font-weight: 500;
 }
-.dribbble {
-    color: #ea4c89;
+
+.sigma {
+  color: #2BB99D;
 }
-.email {
-    color: #70BEB7;
+
+.blurry {
+  color: #C41049;
 }
-.method {
-    color: #7D8FA3;
+
+.confetti-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  overflow: hidden;
+  position: fixed;
+  display:block;
 }
-.github {
-    color: #A57A9E;
+
+
+/* Social Buttons */
+
+.btn {
+  margin: 4px;
 }
-.text {
-    color: #B3B8C4;
+
+.btn-github {
+  color: #fff;
+  background-color: #6e5494;
+  border-color: #6e5494
 }
-.sigma  {
-    color: #2BB99D;
+
+.btn-github:hover {
+  color: #fff;
+  background-color: #5e487d;
+  border-color: #5e487d
 }
-.waterloo {
-    color: #FFD54F;
+
+.btn-twitter {
+  color: #fff;
+  background-color: #55acee;
+  border-color: #55acee
+}
+
+.btn-twitter:hover {
+  color: #fff;
+  background-color: #2e99eb;
+  border-color: #2e99eb
+}
+
+.btn-email {
+  color: #fff;
+  background-color: #ffa767;
+  border-color: #ffa767
+}
+
+.btn-email:hover {
+  color: #fff;
+  background-color: #eb9151;
+  border-color: #eb9151
+}
+
+.btn-dribbble {
+  color: #fff;
+  background-color: #ea4c89;
+  border-color: #ea4c89
+}
+
+.btn-dribbble:hover {
+  color: #fff;
+  background-color: #cf4379;
+  border-color: #cf4379
+}
+
+.btn-resume {
+  color: #fff;
+  background-color: #29b69b;
+  border-color: #29b69b;
+}
+
+.btn-resume:hover {
+  color: #fff;
+  background-color: #239d86;
+  border-color: #239d86;
+}
+
+.btn-linkedin {
+  color: #fff;
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+
+.btn-linkedin:hover {
+  color: #fff;
+  background-color: #0c5e88;
+  border-color: #0c5e88;
+}
+
+.btn-appstore {
+  color: #007bff;
+  background-color: #e5eeee;
+  border-color: #007bff
+}
+
+.btn-appstore:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff
 }

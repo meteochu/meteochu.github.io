@@ -8,47 +8,125 @@
   <meta name="author" content="Andy Liang">
   <link rel="shortcut icon" href="images/favicon.ico" />
   <link rel="mask-icon" href="images/mask-icon.svg" color="#2BB99D" />
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 
-  <title>Andy Liang | Student, Designer, Developer</title>
+  <title>Andy Liang | Student &amp; Designer &amp; Developer</title>
 
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" href="css/custom.css">
+  <script src="js/confetti.js"></script>
 </head>
 
 <body>
-  <div class="container text" id="card">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
-      <span id="code">
-        <span class="red">print</span>(<span class="string">"Hello, world."</span>)
-      </span>
-      <br />
-      <br />
+  <div class="confetti-container">
+      <canvas id="world"></canvas>
+      <script>confetti();</script>
+  </div>
+  <div class="container text content">
+    <div class="row text-center">
+      <div class="col">
+        <span class="code">
+          <span class="red">print</span>(<span class="string">"Hello, world."</span>)
+        <br /><br />
+        </span>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8 col-sm-8 col-10">
+        <h1 class="title">Hello, I am <span class="name">Andy Liang</span>.</h1>
+        <hr />
+        <p>
+          I am an <span class="highlight">iOS developer and designer</span>, and a Computer Science student at the University of Waterloo.
+          <br />
+          <br /> I've worked on a handful of projects that can currently be found on the App Store, including: <a href="#sigma"><span class="sigma">Sigma Planner</span></a> and <a href="#blurry"><span class="blurry">Blurry</span></a>.
+          <br />
+        </p>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+        <a href="https://github.com/meteochu">
+            <button type="button" class="btn btn-github btn-block">
+              <img class="float-left" src="images/github.svg" width="20" />GitHub
+            </button>
+          </a>
+        <a href="https://twitter.com/meteochu">
+            <button type="button" class="btn btn-twitter btn-block">
+              <img class="float-left" src="images/twitter.svg" width="20" />Twitter
+            </button>
+          </a>
+        <a href="mailto:me@andyliang.me">
+            <button type="button" class="btn btn-email btn-block">
+              <img class="float-left" src="images/mail.svg" width="20" />Email
+            </button>
+          </a>
+        <a href="https://dribbble.com/meteochu">
+            <button type="button" class="btn btn-dribbble btn-block">
+              <img class="float-left" src="images/dribbble.svg" width="20" />Dribbble
+            </button>
+          </a>
+        <a href="https://www.linkedin.com/in/andyscliang">
+              <button type="button" class="btn btn-linkedin btn-block">
+                <img class="float-left" src="images/linkedin.svg" width="20" />LinkedIn
+              </button>
+            </a>
+        <a href="files/andyliang-resume.pdf">
+              <button type="button" class="btn btn-resume btn-block">
+                <img class="float-left" src="images/document.svg" width="20" />My Résumé
+              </button>
+            </a>
+      </div>
+    </div>
+    <hr />
+    <div id="sigma" class="row justify-content-center">
+      <!--  Sigma -->
+      <div class="col-md-4 col-sm-8 col-6 text-center">
+        <img class="img-responsive app-icon" src="images/Sigma-icon.png" alt-text="Sigma App Icon" />
+        <h4>Sigma Planner</h4>
+        <h6>Student Life Simplified</h6>
+        <a href="http://itunes.apple.com/us/app/sigma-student-task-cplanner/id1106938042?ls=1&mt=8">
+          <button type="button" class="btn btn-appstore"><b>View on App Store</b></button>
+        </a>
+        <p class="disclaimer">†Update Coming Soon</p>
+      </div>
+      <div class="col-md-8 col-sm-12 col-10">
+        <p class="app-description">
+          <b>Sigma Planner</b> is the perfect companion app for your school activities that help will help you keep track of your classes and allow you to add homework and tasks into your week's schedule with ease.
+          <br />
+          <br /> Track your courses and assignemnts with ease; organize your tasks just the way you need it. Sigma Planner enables you to maximize your efficiency with its simple and intuitive interface and its flexibility that allows you to stay on top
+          of everything.
+          <br />
+          <br />With Sigma Planner, you no longer need to carry an extra agenda or a student diary; simply, grab out your phone, and everything will be available, right at your finger tips.
+        </p>
+      </div>
+    </div>
 
-      <p class="method">
-        Hello, my name is <span class="text">Andy Liang</span>.
-        <br />
-        <br /> I am an iOS developer and designer, and a first year Computer Science student at the <span class="waterloo">University of Waterloo</span>.
-        <br />
-        <br /> As a developer, I have created many projects that can be found on my <a href="https://github.com/meteochu"><span class="github">GitHub</span></a>. One of the best known projects is <a href="http://itunes.apple.com/us/app/sigma-student-task-planner/id1106938042?ls=1&mt=8"><span class="sigma">Sigma: Student Task Planner</span></a>,
-        which can currently be found on the App Store.
-        <br />
-        <br /> As a designer, I work mostly on user interface (UI) design, and graphics design. You can find some of my work on <a href="https://dribbble.com/meteochu"><span class="dribbble">Dribbble</span></a>.
-        <br />
-        <br /> I can be easily reached on <a href="https://twitter.com/meteochu"><span class="twitter">Twitter</span></a>, but feel free to also <a href="mailto:me@andyliang.me"><span class="email">email me</span></a> for any inquiries.
-        <br />
-        <br />
-        <span class="comments">/* Side note */</span>
-        <br /> I (occasionally) write on my <a href="http://blog.andyliang.me/"><span class="blog">blog</span></a>.
-      </p>
+    <hr />
+    <div id="blurry" class="row justify-content-center">
+      <!--  Blurry -->
+      <div class="col-md-4 col-sm-8 col-6 text-center">
+        <img class="img-responsive app-icon" src="images/Blurry-icon.png" alt-text="Blurry App Icon" />
+        <h4>Blurry</h4>
+        <h6>Image Blurring Made Easy</h6>
+        <a href="https://itunes.apple.com/ca/app/blurry/id1254612844?mt=8">
+          <button type="button" class="btn btn-appstore"><b>View on App Store</b></button>
+        </a>
+      </div>
+      <div class="col-md-8 col-sm-12 col-10">
+        <p class="app-description">
+          Ever loved a photo so much that you wanted to have it as a wallpaper but realize that there's too much detail in the photo it doesn't fit as a wallpaper or a background image?
+          <br />
+          <br /> With <b>Blurry</b>, you can customize and create a blur effect on the photo that allows you to create the perfect wallpaper for your device.
+          <br />
+          <br /> From a selection of dark, light, and colour blur, along with an extraordinarily simple UI, you can tweak the image however you like and save it when you're done. It's that simple!
+        </p>
+
+      </div>
     </div>
   </div>
 
 </body>
-<footer class="bottom" align="center">
-    <span class="method">Created with <span id="nofont">❤︎</span> by Andy Liang</span>
+<footer class="footer" align="center">
+  <span class="method">Created with <span class="nofont">❤︎</span> by Andy Liang</span>
+  <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
 </footer>
 
 </html>
