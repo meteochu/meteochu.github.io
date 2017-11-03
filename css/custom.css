@@ -45,7 +45,8 @@ a:hover {
 }
 
 .code {
-  font-family: 'Source Code Pro', 'Consolas';
+  font-family: 'Source Code Pro', monospace;
+  font-size: 18pt;
 }
 
 .app-icon {
