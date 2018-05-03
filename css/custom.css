@@ -62,11 +62,11 @@ a:hover {
 .title {
   font-size: 30pt;
   font-weight: 800;
-  color: black;
+  color: #5c6977;
 }
 
 .name {
-  color: #5c6977;
+  color: black;
 }
 
 .disclaimer {
