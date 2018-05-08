@@ -1,0 +1,60 @@
+body, html {
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  background-color: #1B1E23;
+  text-align: center;
+  display: grid;
+  height: 100%;
+}
+
+hr {
+  border: 0;
+  background-color: #fff2;
+  height: 1.5pt;
+}
+
+span {
+  display: inline-block;
+}
+
+#confetti-container {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  position:absolute;
+}
+
+#world {
+  display:none;
+}
+
+#title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+#time {
+  font-size: 3em;
+  font-weight: 500;
+  color: #C5CFDB;
+  margin: auto;
+}
+
+#content {
+  margin:auto;
+}
+
+.value {
+  font-size: 1em;
+  font-weight: 300;
+  color: #fff;
+}
+
+.label {
+  font-size: 0.5em;
+  font-weight: 600;
+  color: #fff8
+}
