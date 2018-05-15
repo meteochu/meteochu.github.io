@@ -188,6 +188,7 @@ a:hover {
 }
 
 .btn-appstore {
+  border-width: 1.5pt;
   color: #007bff;
   background-color: #e5eeee;
   border-color: #007bff
