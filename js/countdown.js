@@ -1,5 +1,5 @@
 
-var examDate = new Date(2018, 5, 15, 12, 0, 0, 0);
+var examDate = new Date(2019, 5, 17, 12, 0, 0, 0);
 var tid = setInterval(timer, 1000);
 examDate.setMonth(examDate.getMonth() - 1);
 var currentTime = new Date();
