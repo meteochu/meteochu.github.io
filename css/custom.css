@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
   background-color: #e5eeee;
   color: #5c6977
 }
@@ -97,6 +97,14 @@ a:hover {
   color: #65A637;
 }
 
+.waterloo {
+  color: #E4B429;
+}
+
+.yahoo {
+  color: #430297;
+}
+
 .blurry {
   color: #C41049;
 }
@@ -168,12 +176,14 @@ a:hover {
 }
 
 .btn-resume {
+  line-height: 36px;
   color: #fff;
   background-color: #29b69b;
   border-color: #29b69b;
 }
 
 .btn-resume:hover {
+  line-height: 36px;
   color: #fff;
   background-color: #239d86;
   border-color: #239d86;
@@ -202,4 +212,10 @@ a:hover {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff
+}
+
+.btn-instagram {
+  color: #fff;
+  background-color: #fb3958;
+  border-color: #fb3958;
 }
