@@ -5,9 +5,10 @@ html {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 14pt;
+  font-size: 13pt;
   background-color: #e5eeee;
-  color: #5c6977
+  color: #5c6977;
+  padding-bottom:24pt;
 }
 
 a, a:hover, a:active {
@@ -32,16 +33,16 @@ a:hover {
   border-color: rgba(220, 230, 240, 0.5);
   background-color: rgba(230, 240, 245, 0.5);
   position: fixed;
-  padding-top: 6pt;
-  padding-bottom: 6pt;
-  bottom: 0;
+  padding-top: 4pt;
+  padding-bottom: 4pt;
+  bottom: env(safe-area-inset-bottom);
   width: 100%;
   -webkit-backdrop-filter: blur(4px)
 }
 
 .content {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 24pt;
+  padding-bottom: 24pt;
 }
 
 .code {
@@ -201,21 +202,32 @@ a:hover {
   border-color: #0c5e88;
 }
 
-.btn-appstore {
-  border-width: 1.5pt;
-  color: #007bff;
-  background-color: #e5eeee;
-  border-color: #007bff
+.btn-appstore > img {
+  padding-top: 4px;
 }
 
-.btn-appstore:hover {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff
+.btn-appstore > :last-child {
+  display: none;
+}
+
+.btn-appstore:hover > :first-child {
+  display: none;
+}
+
+.btn-appstore:hover > :last-child  {
+  display: inline;
 }
 
 .btn-instagram {
   color: #fff;
   background-color: #fb3958;
   border-color: #fb3958;
+}
+
+.trademark-footer {
+  color: #aaa;
+  padding:2pt;
+  font-size: 10pt;
+  font-style: italic;
+  text-align: center;
 }
