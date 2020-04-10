@@ -14,7 +14,7 @@
   <title>Hello, I'm Andy.</title>
 
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
   <script src="js/confetti.js"></script>
@@ -35,26 +35,25 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-lg-9 col-md-12 col-sm-12 col-10">
+      <div class="col">
         <h1 class="title">Hello, I am <span class="name">Andy Liang</span>.</h1>
         <hr />
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-lg-6 col-md-8 col-sm-8 col-10">
+      <div class="col-lg-8 col-md-8 col-sm-8 col">
         <p>
-        I am an <span class="highlight">iOS developer and designer</span>, and a current student at the <span class="waterloo">University of Waterloo</span> studying Honours Computer Science. I currently work at <span class="highlight"> Apple</span> on the <span class="highlight">UIKit</span> team. I was previously an iOS Engineering Co-op at <span class="highlight">Splunk</span><span class="splunk">></span> on its mobile team, and a Software Development Engineering Co-op at <span class="highlight yahoo">Yahoo!</span> on the <span class="highlight">FlurrySDK</span> team.
-
+          I am a current undergraduate student at <span class="waterloo">University of Waterloo</span> majoring in Honours Computer Science, and an <span class="highlight">iOS developer and designer</span>. I currently work at <span class="highlight"> Apple</span> on the <span class="highlight">UIKit & SwiftUI</span> team. I previously worked at <span class="splunk">Splunk></span> on the Splunk Mobile team, and at <span class="highlight yahoo">Yahoo!</span> on the <span class="highlight">Flurry Analytics</span> team.
           <br />
-          <br /> On the side, I have worked on a handful of projects that can currently be found on the App Store, including: <a href="#sigma"><span class="sigma">Sigma Planner</span></a> and <a href="#blurry"><span class="blurry">Blurry</span></a>. Check out my GitHub for more open-source projects that I have created or contributed to.
+          <br /> On the side, I have worked on a handful of projects that can currently be found on the App Store, including: <a href="#sigma"><span class="sigma">Sigma Planner</span></a> and <a href="#blurry"><span class="blurry">Blurry</span></a>. Feel free to check out my GitHub for more open-source projects that I have created or contributed to.
           <br />
         </p>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-4 col-10">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-10">
         <div class="row">
           <div class="col-12">
         <a href="files/andyliang-resume.pdf">
-              <button type="button" class="btn btn-resume btn-block" style="align: center">
+              <button type="button" class="btn btn-resume btn-block" style="align-content:center">
                 <img class="float-left" src="images/document.svg" alt="" width="36" />My Résumé
               </button>
         </a>
@@ -99,11 +98,44 @@
         </div>
       </div>
     </div>
+    <h2 class="section-title">Previous Experiences</h2>
+    <hr />
+    <div id="oath" class="row justify-content-center">
+      <div class="col-md-3 col-sm-6 col-6 text-center">
+        <a href="https://splunk.com">
+          <img class="img-responsive company-logo" src="images/Apple-logo.png" srcset="images/Apple-logo@2x.png 2x" alt="Apple Logo" />
+        </a>
+        <h4 class="apple">UIKit & SwiftUI</h4>
+        <p class="subtitle">Spring 2019</p>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 text-center">
+        <a href="https://splunk.com">
+          <img class="img-responsive company-logo" src="images/Splunk-logo.png" srcset="images/Splunk-logo@2x.png 2x" alt="Splunk Logo" />
+        </a>
+        <h4 class="splunk">Splunk Mobile</h4>
+        <p class="subtitle">Fall 2018</p>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 text-center">
+        <a href="https://www.verizonmedia.com">
+          <img class="img-responsive company-logo" src="images/Oath-logo.png" srcset="images/Oath-logo@2x.png 2x" alt="Oath Logo" />
+        </a>
+        <h4 class="oath">Flurry SDK</h4>
+        <p class="subtitle">Winter 2018</p>
+      </div>
+      <div class="col-md-3 col-sm-6 col-6 text-center">
+        <a href="https://yahoo.com">
+          <img class="img-responsive company-logo" src="images/Yahoo-logo.png" srcset="images/Yahoo-logo@2x.png 2x" alt="Yahoo Logo" />
+        </a>
+        <h4 class="yahoo">Flurry App</h4>
+        <p class="subtitle">Spring 2017</p>
+      </div>
+    </div>
+    <h2 class="section-title">Personal Projects</h2>
     <hr />
     <div id="sigma" class="row justify-content-center">
       <!--  Sigma -->
       <div class="col-md-4 col-sm-8 col-8 text-center">
-        <img class="img-responsive app-icon" src="images/Sigma-icon.png" alt="Sigma App Icon" />
+        <img class="img-responsive app-icon" src="images/SigmaPlanner-icon.png" srcset="images/SigmaPlanner-icon@2x.png 2x" alt="Sigma App Icon" />
         <h4>Sigma Planner</h4>
         <h6>Your Personal School Planner</h6>
         <a class="btn-appstore" href="https://apps.apple.com/app/sigma-planner/id1106938042" >
@@ -127,7 +159,7 @@
     <div id="blurry" class="row justify-content-center">
       <!--  Blurry -->
       <div class="col-md-4 col-sm-8 col-8 text-center">
-        <img class="img-responsive app-icon" src="images/Blurry-icon.png" alt="Blurry App Icon" />
+        <img class="img-responsive app-icon" src="images/Blurry-icon.png" srcset="images/Blurry-icon@2x.png 2x" alt="Blurry App Icon" />
         <h4>Blurry</h4>
         <h6>Quick and Easy Image Blurring</h6>
         <a class="btn-appstore" href="https://apps.apple.com/app/id1254612844" >
@@ -156,7 +188,7 @@
       </p>
   </div>
 </body>
-<footer class="footer" align="center">
+<footer class="footer col-md-6" align="center">
   <span class="method">Created with <span class="nofont">❤︎</span> by Andy Liang</span>
   <!-- Entypo pictograms by Daniel Bruce — www.entypo.com -->
 </footer>

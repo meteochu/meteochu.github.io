@@ -1,14 +1,40 @@
 html {
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --title-font-color: #b5c0cd;
+    --primary-font-color: #aaa;
+    --secondary-font-color: #525252;
+    --highlight-font-color: #fff;
+    --background-color: #222;
+    --yahoo-purple: #9239ff;
+    --blur-bg-color: rgba(10, 15, 15, 0.75);
+    --blur-border-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --title-font-color: #5c6977;
+    --primary-font-color: #5c6977;
+    --secondary-font-color: #a4a4a4;
+    --highlight-font-color: #28292e;
+    --background-color: #e5eeee;
+    --yahoo-purple: #5f01d1;
+    --blur-bg-color: rgba(230, 240, 245, 0.5);
+    --blur-border-color: rgba(0, 0, 0, 0.25);
+  }
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 13pt;
-  background-color: #e5eeee;
-  color: #5c6977;
-  padding-bottom:24pt;
+  font-size: 15pt;
+  background-color: var(--background-color);
+  color: var(--primary-font-color);
+  padding-bottom:48pt;
 }
 
 a, a:hover, a:active {
@@ -22,22 +48,26 @@ li {
 
 a:hover {
   background-color: rgba(130, 130, 130, 0.1);
-  border-radius: 2pt
+  border-radius: 2pt;
 }
 
 .footer {
-  font-size: 12pt;
-  color: #7D8FA3;
-  border-top-style: solid;
-  border-top-width: 1pt;
-  border-color: rgba(220, 230, 240, 0.5);
-  background-color: rgba(230, 240, 245, 0.5);
+  font-size: 13pt;
+  color: var(--primary-font-color);
+  border-radius: 8pt;
+  background-color: var(--blur-bg-color);
+  padding: 12pt;
   position: fixed;
-  padding-top: 4pt;
-  padding-bottom: 4pt;
-  bottom: env(safe-area-inset-bottom);
-  width: 100%;
-  -webkit-backdrop-filter: blur(4px)
+  bottom: calc(env(safe-area-inset-bottom) + 12pt);
+  left: 50%;
+  margin-left: -160pt;
+  width: 320pt;
+  box-shadow: 0pt 2pt 4pt 0pt rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.section-title {
+  padding-top: 16pt;
 }
 
 .content {
@@ -51,23 +81,34 @@ a:hover {
 }
 
 .app-icon {
-  border-radius: 20%;
+  border-radius: 25%; / 25%;
   margin-bottom: 10px
+}
+
+.company-logo {
+  border-radius: 50%;
+  scale: 50%;
+  margin-bottom: 12px;
 }
 
 .app-description {
   margin: 4px;
-  font-size: 13pt
+  font-size: 14pt
 }
 
 .title {
   font-size: 30pt;
   font-weight: 800;
-  color: #5c6977;
+  color: var(--title-font-color);
+}
+
+.subtitle {
+  font-size: 12pt;
+  color: var(--secondary-font-color);
 }
 
 .name {
-  color: black;
+  color: var(--highlight-font-color);
 }
 
 .disclaimer {
@@ -86,7 +127,7 @@ a:hover {
 }
 
 .highlight {
-  color: #28292e;
+  color: var(--highlight-font-color);
   font-weight: 500;
 }
 
@@ -95,19 +136,23 @@ a:hover {
 }
 
 .splunk {
-  color: #65A637;
+  color: #E6017E;
 }
 
 .waterloo {
   color: #E4B429;
 }
 
+.oath {
+  color: #006CB6;
+}
+
 .yahoo {
-  color: #430297;
+  color: var(--yahoo-purple);
 }
 
 .blurry {
-  color: #C41049;
+  color: #802ce6;
 }
 
 .confetti-container {
@@ -126,6 +171,7 @@ a:hover {
 
 .btn {
   margin: 4px;
+  padding: 8pt;
 }
 
 .btn-github {
