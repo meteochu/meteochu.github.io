@@ -31,10 +31,10 @@ html {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 15pt;
+  font-size: 13pt;
   background-color: var(--background-color);
   color: var(--primary-font-color);
-  padding-bottom:48pt;
+  padding-bottom: 16pt;
 }
 
 a, a:hover, a:active {
@@ -52,18 +52,15 @@ a:hover {
 }
 
 .footer {
-  font-size: 13pt;
-  color: var(--primary-font-color);
+  font-size: 11pt;
+  text-align: center;
   border-radius: 8pt;
+  color: var(--primary-font-color);
   background-color: var(--blur-bg-color);
-  padding: 12pt;
-  position: fixed;
-  bottom: calc(env(safe-area-inset-bottom) + 12pt);
+  padding: 8pt;
   left: 50%;
-  margin-left: -160pt;
-  width: 320pt;
-  box-shadow: 0pt 2pt 4pt 0pt rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(6px);
+  width: 240px;
+  box-shadow: 0pt 2pt 4pt 0pt rgba(0, 0, 0, 0.20);
 }
 
 .section-title {
@@ -76,12 +73,12 @@ a:hover {
 }
 
 .code {
-  font-family: 'Source Code Pro', monospace;
+  font-family: monospace;
   font-size: 18pt;
 }
 
 .app-icon {
-  border-radius: 25%; / 25%;
+  border-radius: 25% / 25%;
   margin-bottom: 10px
 }
 
@@ -93,7 +90,7 @@ a:hover {
 
 .app-description {
   margin: 4px;
-  font-size: 14pt
+  font-size: 13pt;
 }
 
 .title {
@@ -109,6 +106,11 @@ a:hover {
 
 .name {
   color: var(--highlight-font-color);
+}
+
+.profile-pic {
+  border-radius: 25%;
+  margin: 8pt;
 }
 
 .disclaimer {
@@ -166,90 +168,78 @@ a:hover {
   display:block;
 }
 
-
 /* Social Buttons */
 
 .btn {
-  margin: 4px;
-  padding: 8pt;
+  align-content: center;
+  border-radius: 6pt;
+  transition: all .15s ease-in-out;
 }
 
-.btn-github {
-  color: #fff;
-  background-color: #6e5494;
-  border-color: #6e5494
+.btn:hover {
+  border-radius: 6pt;
 }
 
-.btn-github:hover {
-  color: #fff;
-  background-color: #5e487d;
-  border-color: #5e487d
+.btn-block {
+  margin: 4pt;
+  box-shadow: 0pt 1pt 2pt 0pt rgba(0, 0, 0, 0.25);
 }
 
-.btn-twitter {
-  color: #fff;
-  background-color: #55acee;
-  border-color: #55acee
-}
-
-.btn-twitter:hover {
-  color: #fff;
-  background-color: #2e99eb;
-  border-color: #2e99eb
-}
-
-.btn-email {
-  color: #fff;
-  background-color: #ffa767;
-  border-color: #ffa767
-}
-
-.btn-email:hover {
-  color: #fff;
-  background-color: #eb9151;
-  border-color: #eb9151
-}
-
-.btn-dribbble {
-  color: #fff;
-  background-color: #ea4c89;
-  border-color: #ea4c89
-}
-
-.btn-dribbble:hover {
-  color: #fff;
-  background-color: #cf4379;
-  border-color: #cf4379
+.btn-block:hover {
+  box-shadow: 0pt 2pt 4pt 0pt rgba(0, 0, 0, 0.25);
+  transform: scale(1.10);
 }
 
 .btn-resume {
-  line-height: 36px;
+  border-radius: 6pt;
+  line-height: 28px;
   color: #fff;
   background-color: #29b69b;
-  border-color: #29b69b;
 }
 
 .btn-resume:hover {
-  line-height: 36px;
   color: #fff;
-  background-color: #239d86;
-  border-color: #239d86;
+  background-color: #2fc9ad;
+}
+
+.btn-github {
+  background-color: #6e5494;
+}
+
+.btn-github:hover {
+  background-color: #886bb3;
+}
+
+.btn-twitter {
+  background-color: #55acee;
+}
+
+.btn-twitter:hover {
+  background-color: #55b8ee;
+}
+
+.btn-email {
+  background-color: #ffa767;
+}
+
+.btn-email:hover {
+  background-color: #ffbb67;
+}
+
+.btn-dribbble {
+  background-color: #ea4c89;
+}
+
+.btn-dribbble:hover {
+  background-color: #ff6ea6;
 }
 
 .btn-linkedin {
-  color: #fff;
   background-color: #0077b5;
-  border-color: #0077b5;
 }
 
 .btn-linkedin:hover {
-  color: #fff;
-  background-color: #0c5e88;
-  border-color: #0c5e88;
-}
-
-.btn-appstore > img {
-  padding-top: 4px;
+  background-color: #1e9ede;
 }
 
 .btn-appstore > :last-child {
