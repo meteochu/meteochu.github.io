@@ -128,6 +128,12 @@ a:hover {
   color: #95B47B;
 }
 
+.comment {
+  color: var(--secondary-font-color);
+  font-style: italic;
+  font-family: monospace;
+}
+
 .highlight {
   color: var(--highlight-font-color);
   font-weight: 500;
@@ -192,9 +198,18 @@ a:hover {
 
 .btn-resume {
   border-radius: 6pt;
-  line-height: 28px;
+  line-height: 22pt;
   color: #fff;
   background-color: #29b69b;
+  vertical-align: middle;
+}
+
+.btn-resume > img {
+  margin-right: 4pt;
+}
+
+.btn-resume > * {
+  vertical-align: middle;
 }
 
 .btn-resume:hover {
