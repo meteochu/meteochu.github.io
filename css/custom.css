@@ -282,3 +282,8 @@ a:hover {
   font-style: italic;
   text-align: center;
 }
+
+hr.divider {
+  margin-top: 0em;
+  border-width: 1pt;
+}
