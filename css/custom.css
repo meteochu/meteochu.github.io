@@ -1,3 +1,7 @@
+.container {
+    max-width: 768pt;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -5,8 +9,8 @@ html {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --title-font-color: #b5c0cd;
-    --primary-font-color: #aaa;
+    --title-font-color: white;
+    --primary-font-color: #ccc;
     --secondary-font-color: #525252;
     --highlight-font-color: #fff;
     --background-color: #222;
@@ -14,12 +18,16 @@ html {
     --blur-bg-color: rgba(10, 15, 15, 0.75);
     --blur-border-color: rgba(255, 255, 255, 0.25);
   }
+
+  hr {
+    border-color: var(--secondary-font-color);
+  }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --title-font-color: #5c6977;
-    --primary-font-color: #5c6977;
+    --title-font-color: black;
+    --primary-font-color: #3b454e;
     --secondary-font-color: #a4a4a4;
     --highlight-font-color: #28292e;
     --background-color: #e5eeee;
@@ -38,17 +46,11 @@ body {
 }
 
 a, a:hover, a:active {
-  color: #C5CFDB;
   text-decoration: none;
 }
 
 li {
   list-style-type: none;
-}
-
-a:hover {
-  background-color: rgba(130, 130, 130, 0.1);
-  border-radius: 2pt;
 }
 
 .footer {
@@ -97,6 +99,14 @@ a:hover {
   font-size: 30pt;
   font-weight: 800;
   color: var(--title-font-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-font-color);
+}
+
+.section-title {
+  color: var(--primary-font-color);
 }
 
 .subtitle {
@@ -148,7 +158,7 @@ a:hover {
 }
 
 .waterloo {
-  color: #E4B429;
+  color: #c69b18;
 }
 
 .oath {
@@ -255,18 +265,6 @@ a:hover {
 
 .btn-linkedin:hover {
   background-color: #1e9ede;
-}
-
-.btn-appstore > :last-child {
-  display: none;
-}
-
-.btn-appstore:hover > :first-child {
-  display: none;
-}
-
-.btn-appstore:hover > :last-child  {
-  display: inline;
 }
 
 .btn-instagram {
