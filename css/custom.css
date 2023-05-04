@@ -273,6 +273,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #55b8ee;
 }
 
+.btn-mastodon {
+  background-color: #563acc;
+}
+
+.btn-mastodon:hover {
+  background-color: #6364ff;
+}
+
 .btn-email {
   background-color: #ffa767;
 }
