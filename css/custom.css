@@ -10,7 +10,7 @@ html {
 @media (prefers-color-scheme: dark) {
   :root {
     --title-font-color: white;
-    --primary-font-color: #ccc;
+    --primary-font-color: #999;
     --secondary-font-color: #525252;
     --highlight-font-color: #fff;
     --background-color: #222;
@@ -29,7 +29,7 @@ html {
 @media (prefers-color-scheme: light) {
   :root {
     --title-font-color: black;
-    --primary-font-color: #3b454e;
+    --primary-font-color: #777;
     --secondary-font-color: #a4a4a4;
     --highlight-font-color: #28292e;
     --background-color: #e5eeee;
@@ -218,12 +218,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
   align-content: center;
-  border-radius: 6pt;
+  border-radius: 500px;
   transition: all .15s ease-in-out;
 }
 
-.btn:hover {
-  border-radius: 6pt;
+.btn-title {
+  font-size:small;
+  text-align:center;
+  font-weight:500;
+  color:#777;
+}
+
+.btn-block:hover .btn-title {
+  visibility: visible;
 }
 
 .btn-block {
@@ -232,20 +239,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-block:hover {
-  box-shadow: 0pt 2pt 4pt 0pt rgba(0, 0, 0, 0.25);
-  transform: scale(1.10);
+  box-shadow: 0pt 2pt 8pt 2pt rgba(0, 0, 0, 0.15);
+  transform: scale(1.08);
 }
 
 .btn-resume {
-  border-radius: 6pt;
-  line-height: 22pt;
+  border-radius: 500pt;
+  line-height: 24pt;
   color: #fff;
   background-color: #29b69b;
   vertical-align: middle;
+  padding: 4pt 16pt;
 }
 
 .btn-resume > img {
-  margin-right: 4pt;
+  margin-right: 8pt;
 }
 
 .btn-resume > * {
@@ -279,6 +287,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-mastodon:hover {
   background-color: #6364ff;
+}
+
+.btn-threads {
+  background-color: #000;
+}
+
+.btn-threads:hover {
+  background-color: #333;
 }
 
 .btn-email {
