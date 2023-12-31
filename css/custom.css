@@ -56,11 +56,11 @@ a, a:hover, a:active {
 .card {
   background-color: var(--secondary-background-color);
   border-color: var(--secondary-background-color);
-  border-radius: 13pt;
+  border-radius: 24pt;
 }
 
 .card-body {
-  padding: 12pt;
+  padding: 16pt;
 }
 
 .card:hover {
@@ -149,8 +149,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-pic {
-  border-radius: 25%;
-  margin: 8pt;
+  border-radius: 20%;
+  margin: 12pt;
 }
 
 .disclaimer {
@@ -170,7 +170,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .comment {
   color: var(--secondary-font-color);
-  font-style: italic;
   font-family: monospace;
 }
 
@@ -239,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-block:hover {
-  box-shadow: 0pt 2pt 8pt 2pt rgba(0, 0, 0, 0.15);
+  box-shadow: 0pt 2pt 6pt 2pt rgba(0, 0, 0, 0.15);
   transform: scale(1.08);
 }
 
@@ -248,21 +247,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24pt;
   color: #fff;
   background-color: #29b69b;
-  vertical-align: middle;
-  padding: 4pt 16pt;
-}
-
-.btn-resume > img {
-  margin-right: 8pt;
-}
-
-.btn-resume > * {
-  vertical-align: middle;
+  padding: 4pt 24pt;
+  box-shadow: 0pt 1pt 2pt 0pt rgba(0, 0, 0, 0.15);
+  margin: 0pt 0pt 4pt 0pt;
 }
 
 .btn-resume:hover {
   color: #fff;
-  background-color: #2fc9ad;
+  background-color: #34bfa5;
+  box-shadow: 0pt 2pt 4pt 2pt rgba(0, 0, 0, 0.05);
+  transform: scale(1.05);
 }
 
 .btn-github {
@@ -286,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-mastodon:hover {
-  background-color: #6364ff;
+  background-color: #745ade;
 }
 
 .btn-threads {
@@ -294,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-threads:hover {
-  background-color: #333;
+  background-color: #111;
 }
 
 .btn-email {
